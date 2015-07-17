@@ -1,4 +1,4 @@
-package cz.mikropsoft.springboot.vaadin.todo;
+package cz.mikropsoft.springboot.vaadin;
 
 import com.vaadin.data.util.converter.Converter;
 import com.vaadin.server.FontAwesome;

@@ -9,9 +9,8 @@ import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.*;
 import com.vaadin.ui.renderers.HtmlRenderer;
 import com.vaadin.ui.themes.ValoTheme;
-import cz.mikropsoft.springboot.vaadin.todo.BooleanToFontIconConverter;
-import cz.mikropsoft.springboot.vaadin.todo.Todo;
-import cz.mikropsoft.springboot.vaadin.todo.TodoRepository;
+import cz.mikropsoft.springboot.domain.Todo;
+import cz.mikropsoft.springboot.service.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.PostConstruct;

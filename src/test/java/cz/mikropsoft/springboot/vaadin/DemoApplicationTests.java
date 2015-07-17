@@ -1,5 +1,6 @@
 package cz.mikropsoft.springboot.vaadin;
 
+import cz.mikropsoft.springboot.DemoApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.SpringApplicationConfiguration;

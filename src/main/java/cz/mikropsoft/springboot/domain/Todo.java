@@ -1,4 +1,4 @@
-package cz.mikropsoft.springboot.vaadin.todo;
+package cz.mikropsoft.springboot.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
