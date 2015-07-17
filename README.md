@@ -4,3 +4,4 @@ Demo project for Spring Boot
 - jpa
 - security
 - rest
+- declarative login

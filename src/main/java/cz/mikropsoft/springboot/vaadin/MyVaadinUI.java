@@ -33,6 +33,7 @@ public class MyVaadinUI extends UI {
 		navigationBar.addComponent(createNavigationButton("View scoped view", ViewScopedView.VIEW_NAME));
         navigationBar.addComponent(createNavigationButton("Todo View", TotoView.VIEW_NAME));
         navigationBar.addComponent(createNavigationButton("UI Scoped View", UIScopedView.VIEW_NAME));
+        navigationBar.addComponent(createNavigationButton("Login View", LoginView.VIEW_NAME));
 		root.addComponent(navigationBar);
 
 		final Panel viewContainer = new Panel();
