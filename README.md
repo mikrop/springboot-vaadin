@@ -5,3 +5,4 @@ Demo project for Spring Boot
 - security
 - rest
 - declarative login
+- ireport print
