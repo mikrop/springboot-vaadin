@@ -5,6 +5,7 @@ import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.Notification;
+import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
 @SpringView(name = LoginView.VIEW_NAME)
@@ -23,12 +24,12 @@ public class LoginView extends VerticalLayout implements View {
     }
 
     private void performLogin() {
-        String email=this.loginForm.emailField.getValue();
-        String password=this.loginForm.passwordField.getValue();
-        if(email.equals("jmeno@email.cz") && password.equals("mojeheslo")){
-            Notification.show("SUCCESS");
-        } else{
-            Notification.show("Login failed. Try 'jmeno@email.cz/mojeheslo'");
+        String email = this.loginForm.emailField.getValue();
+        String password = this.loginForm.passwordField.getValue();
+        if(email.equals("e@email.cz") && password.equals("p")) {
+            UI.getCurrent().getNavigator().navigateTo(TodoView.VIEW_NAME);
+        } else {
+            Notification.show("Login failed. Try 'e@email.cz/p'");
         }
     }
 

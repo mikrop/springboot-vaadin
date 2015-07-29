@@ -3,7 +3,7 @@ package cz.mikropsoft.springboot.vaadin;
 import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.event.ShortcutAction;
 import com.vaadin.navigator.View;
-import com.vaadin.navigator.ViewChangeListener;
+import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.server.FontAwesome;
 import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.*;
@@ -12,12 +12,13 @@ import com.vaadin.ui.themes.ValoTheme;
 import cz.mikropsoft.springboot.domain.Todo;
 import cz.mikropsoft.springboot.service.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
 
-@SpringView(name = TotoView.VIEW_NAME)
-public class TotoView extends VerticalLayout implements View {
+@SpringView(name = TodoView.VIEW_NAME)
+public class TodoView extends VerticalLayout implements View {
 
     private static final long serialVersionUID = 1L;
     public final static String VIEW_NAME = "todo";
@@ -100,7 +101,7 @@ public class TotoView extends VerticalLayout implements View {
     }
 
     @Override
-    public void enter(ViewChangeListener.ViewChangeEvent event) {
+    public void enter(ViewChangeEvent event) {
         // TODO Auto-generated method stub
     }
 

@@ -1,0 +1,11 @@
+
+spring:
+    application:
+        name: demo
+    data:
+        rest.base-uri: /api
+
+logging:
+    level:
+        org.springframework.security: DEBUG
+        org.springframework.web: DEBUG

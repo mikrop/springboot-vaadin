@@ -10,14 +10,12 @@ public class Todo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
     private String text;
-
     private boolean done;
 
-    public Todo() {
-    }
+    public Todo() {}
 
     public Todo(String text) {
         this.text = text;
